@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistem Informasi | Portofolio & Biodata</title>
+    <!-- Memuat Tailwind CSS untuk styling yang responsif dan modern -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            /* Latar belakang terang, bersih, dan elegan */
+            background-color: #f4f7f9; 
+            /* Teks utama gelap untuk kontras tinggi */
+            color: #1f2937;
+            line-height: 1.6;
+        }
+        /* Definisi Warna Accent Utama (Biru Elegan) */
+        .blue-accent {
+            color: #1d4ed8; /* Deep Blue 700 */
+            font-weight: 700;
+        }
+        .card-bg {
+            /* Latar belakang kartu putih bersih dengan bayangan lembut */
+            background-color: #ffffff; 
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05); /* Soft shadow */
+            transition: all 0.3s ease;
+        }
+        .btn-clean {
+            background-color: #1d4ed8; /* Deep Blue */
+            color: #ffffff;
+            transition: all 0.3s ease;
+            /* Soft elevation shadow */
+            box-shadow: 0 4px 10px rgba(29, 78, 216, 0.3); 
+        }
+        .btn-clean:hover {
+            background-color: #3b82f6; /* Blue 500 */
+            box-shadow: 0 6px 15px rgba(29, 78, 216, 0.5);
+        }
+        /* Efek hover untuk kartu blog/artikel */
+        .article-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+        /* Semua animasi neon telah dihapus untuk tampilan yang lebih bersih */
+    </style>
+</head>
+
+<body>
+    <!-- HEADER / NAVIGATION -->
+    <header class="p-6 border-b border-gray-300 card-bg sticky top-0 z-10">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <div class="text-2xl font-extrabold tracking-wider blue-accent">
+                GABRIEL.XD
+            </div>
+            <nav class="hidden md:flex space-x-6 text-sm font-medium">
+                <a href="#profil" class="hover:text-blue-700 transition-colors">TENTANG SAYA</a> <!-- Diubah menjadi 'Tentang Saya' -->
+                <a href="#keahlian" class="hover:text-blue-700 transition-colors">KEAHLIAN</a>
+                <a href="#blog" class="hover:text-blue-700 transition-colors">ARTIKEL</a> 
+                <a href="#kontak" class="hover:text-blue-700 transition-colors">KONTAK</a>
+            </nav>
+            <button class="md:hidden text-gray-700 hover:text-blue-700">
+                <!-- Hamburger Icon SVG -->
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        
+        <!-- BAGIAN HERO / PROFIL -->
+        <section id="profil" class="pt-10">
+            <!-- Sub-section 1: Ringkasan Profil dan Foto -->
+            <div class="flex flex-col md:flex-row items-center justify-between gap-10 pb-16">
+                <div class="md:w-3/5">
+                    <p class="text-sm uppercase tracking-widest text-gray-500 mb-2">Mahasiswa Sistem Informasi</p>
+                    <h1 class="text-4xl sm:text-6xl font-extrabold leading-tight mb-4">
+                        Halo, Saya <span class="blue-accent">GABRIEL PASKHA CESHAR GINTING</span>.
+                    </h1>
+                    <p class="text-xl text-gray-700 mb-6">
+                        Saya mendalami perpaduan antara teknologi, bisnis, dan kreativitas.  <span class="font-semibold">Saat ini, saya fokus pada pengembangan desain pengalaman pengguna (UI/UX), membangun brand apparel . serta merencanakan strategi bisnis digital yang relevan di era modern.
+                    </p>
+                    
+                    <div class="flex flex-wrap gap-4 mb-8">
+                        <span class="inline-block bg-blue-100 text-blue-700 px-4 py-1 text-sm rounded-full border border-blue-300">Streetwear Design Enthusiast</span>
+                        <span class="inline-block bg-blue-100 text-blue-700 px-4 py-1 text-sm rounded-full border border-blue-300">UI/UX Enthusiast</span>
+                        <span class="inline-block bg-blue-100 text-blue-700 px-4 py-1 text-sm rounded-full border border-blue-300">Problem Solver</span>
+                    </div>
+                    
+                    <!-- Update link button ke bagian blog -->
+                    <a href="#blog" class="btn-clean font-bold py-3 px-8 rounded-lg inline-block text-lg">
+                        Baca Tulisan Terbaru →
+                    </a>
+                </div>
+                
+                 <div class="md:w-2/5 flex justify-center">
+                    <!-- Box shadow lembut menggantikan pulsing neon border -->
+                    <div class="relative w-64 h-64 sm:w-80 sm:h-80 rounded-full border-4 border-blue-300 p-1 shadow-xl">
+                        <!-- PERBAIKAN AKHIR DENGAN LINK YANG PALING STABIL -->
+                        <img src="https://i.imgur.com/73JrQ0x.jpeg" 
+                             class="w-full h-full object-cover rounded-full">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sub-section 2: DETAIL BIODATA & PENDIDIKAN (BARU DITAMBAHKAN) -->
+            <div class="mt-16 pt-8 border-t border-gray-200 grid grid-cols-1 md:grid-cols-3 gap-8 text-gray-700">
+                <!-- Kolom 1: Biodata Pribadi -->
+                <div class="md:col-span-1 card-bg p-6 rounded-xl border border-gray-200">
+                    <h3 class="text-xl font-bold blue-accent mb-4">Biodata Pribadi</h3>
+                    <ul class="space-y-3 text-sm">
+                        <li class="flex justify-between items-start border-b border-gray-100 pb-2">
+                            <span class="font-semibold text-gray-800">TTL:</span>
+                            <span class="text-right">Kabanjahe, 21 Agustus 2006</span>
+                        </li>
+                        <li class="flex justify-between items-start border-b border-gray-100 pb-2">
+                            <span class="font-semibold text-gray-800">Domisili:</span>
+                            <span class="text-right">Kota Denpasar Selatan, Indonesia</span>
+                        </li>
+                        <li class="flex justify-between items-start border-b border-gray-100 pb-2">
+                            <span class="font-semibold text-gray-800">Status:</span>
+                            <span class="text-right">Mahasiswa Aktif</span>
+                        </li>
+                        <li class="flex justify-between items-start">
+                            <span class="font-semibold text-gray-800">Hobi:</span>
+                            <span class="text-right">Fotografi, UI/UX Enthusiast, Desain Grafis</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Kolom 2 & 3: Riwayat Pendidikan -->
+                <div class="md:col-span-2 card-bg p-6 rounded-xl border border-gray-200">
+                    <h3 class="text-xl font-bold blue-accent mb-4">Riwayat Pendidikan</h3>
+                    <!-- Timeline Pendidikan -->
+                    <ol class="relative border-l border-gray-300 ml-3 space-y-8">
+                        <!-- Pendidikan 1: Universitas -->
+                        <li class="ml-6">
+                            <span class="absolute flex items-center justify-center w-3 h-3 bg-blue-500 rounded-full -left-1.5 ring-4 ring-white"></span>
+                            <h4 class="mb-1 text-md font-semibold text-gray-900">Universitas Pendidikan Ganesha (2024 - Sekarang)</h4>
+                            <p class="text-sm italic font-medium text-gray-600">S1 Sistem Informasi</p>
+                            <p class="text-sm text-gray-500 mt-1">Fokus pada pengembangan UI/UX yang intuitif serta perencanaan bisnis digital untuk mendukung pertumbuhan di era transformasi digital..</p>
+                        </li>
+                        <!-- Pendidikan 2: Sekolah Menengah Atas -->
+                        <li class="ml-6">
+                            <span class="absolute flex items-center justify-center w-3 h-3 bg-blue-500 rounded-full -left-1.5 ring-4 ring-white"></span>
+                            <h4 class="mb-1 text-md font-semibold text-gray-900">SMK Bersama Berastagi (2022 - 2024)</h4>
+                            <p class="text-sm italic font-medium text-gray-600">Jurusan DKV/Multimedia</p>
+                            <p class="text-sm text-gray-500 mt-1">Aktif di Desain Grafis Digital Sekolah.</p>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+
+        <!-- GARIS PEMISAH DINAMIS -->
+        <hr class="border-t border-gray-300 my-10 opacity-80">
+
+        <!-- BAGIAN KEAHLIAN (SKILLS) -->
+                <!-- BAGIAN KEAHLIAN (SKILLS) -->
+        <section id="keahlian" class="py-16">
+            <h2 class="text-3xl sm:text-4xl font-bold mb-10 text-center">
+                <span class="blue-accent"></span> KEAHLIAN & KREATIVITAS TEKNIK
+            </h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                
+                <!-- Skill Card 1: UI/UX Multimedia -->
+                <div class="card-bg p-6 rounded-xl border border-gray-200 transition-all duration-300 hover:border-blue-500 hover:shadow-lg">
+                    <!-- Ikon Ganti: Palette/Paintbrush untuk Desain -->
+                    <div class="text-3xl blue-accent mb-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-2.414-2.414A1 1 0 0015.586 6H7a2 2 0 00-2 2v11a2 2 0 002 2z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">UI/UX & Multimedia</h3>
+                    <p class="text-gray-600 text-sm">Merancang tampilan aplikasi atau website yang mudah dipahami dan digunakan oleh siapa saja. Fokus utamanya membuat pengalaman pengguna jadi nyaman, dengan desain visual yang menarik, dinamis, dan interaktif.</p>
+                </div>
+                
+                <!-- Skill Card 2: Design Produk (Product Design) -->
+                <div class="card-bg p-6 rounded-xl border border-gray-200 transition-all duration-300 hover:border-blue-500 hover:shadow-lg">
+                    <!-- Ikon Ganti: Lightbulb/Idea untuk Product Design -->
+                    <div class="text-3xl blue-accent mb-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 13h6m-3-3v6m5 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Design Produk (Product Design)</h3>
+                    <p class="text-gray-600 text-sm">Menerjemahkan kebutuhan pengguna ke dalam fitur yang benar-benar bermanfaat. Prosesnya mulai dari mencari ide, membuat konsep, sampai merancang alur sistem dalam bentuk wireframe, sehingga produk lebih terarah dan sesuai dengan kebutuhan.</p>
+                </div>
+
+                <!-- Skill Card 3: Fotografi -->
+                <div class="card-bg p-6 rounded-xl border border-gray-200 transition-all duration-300 hover:border-blue-500 hover:shadow-lg">
+                    <!-- Ikon Ganti: Camera untuk Fotografi -->
+                    <div class="text-3xl blue-accent mb-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.218A2 2 0 0110.457 4h3.085a2 2 0 011.664.89l.812 1.218A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15 13a3 3 0 11-6 0 3 3 0 016 0z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Fotografi</h3>
+                    <p class="text-gray-600 text-sm">Menguasai teknik pengambilan gambar dengan memperhatikan komposisi, pencahayaan, dan sudut pandang. Tidak hanya mengambil foto, tapi juga mampu menyampaikan cerita lewat visual, baik dalam bentuk foto diam maupun video pendek.</p>
+                </div>
+                
+                <!-- Skill Card 4: Editor -->
+                <div class="card-bg p-6 rounded-xl border border-gray-200 transition-all duration-300 hover:border-blue-500 hover:shadow-lg">
+                    <!-- Ikon Ganti: Film/Video Editing untuk Editor -->
+                    <div class="text-3xl blue-accent mb-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Editor (Video & Foto)</h3>
+                    <p class="text-gray-600 text-sm">Berpengalaman dalam mengolah foto, video, dan audio agar lebih menarik dan berkualitas. Terbiasa menggunakan software profesional seperti Adobe Suite atau DaVinci Resolve untuk kebutuhan editing konten digital.</p>
+                </div>
+            </div>
+
+            <!-- Bagian Bar Keahlian Teknis (Programming Languages) -->
+            <div class="mt-12">
+                <h3 class="text-2xl font-bold mb-6 text-center">Kemampuan Perangkat Lunak Multimedia & Dasar Web</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <!-- Bar 1: Adobe Photoshop (Editing Foto/Visual) -->
+                    <div class="space-y-2">
+                        <div class="flex justify-between items-center text-sm font-medium text-gray-700">
+                            <span>Adobe Photoshop (Pengeditan Foto)</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="w-full bg-gray-200 rounded-full h-2 overflow-hidden">
+                            <div class="h-full rounded-full bg-blue-600 progress-bar-fill" style="width: 90%;"></div>
+                        </div>
+                    </div>
+                    <!-- Bar 2: Adobe Premiere Pro / DaVinci Resolve (Editing Video) -->
+                    <div class="space-y-2">
+                        <div class="flex justify-between items-center text-sm font-medium text-gray-700">
+                            <span>Adobe Premiere Pro / DaVinci Resolve (Video Editing)</span>
+                            <span>85%</span>
+                        </div>
+                        <div class="w-full bg-gray-200 rounded-full h-2 overflow-hidden">
+                            <div class="h-full rounded-full bg-blue-600 progress-bar-fill" style="width: 85%;"></div>
+                        </div>
+                    </div>
+                    <!-- Bar 3: Figma / Adobe XD (Prototyping & UX/UI) -->
+                    <div class="space-y-2">
+                        <div class="flex justify-between items-center text-sm font-medium text-gray-700">
+                            <span>Figma / Adobe XD (Prototyping UX/UI)</span>
+                            <span>95%</span>
+                        </div>
+                        <div class="w-full bg-gray-200 rounded-full h-2 overflow-hidden">
+                            <div class="h-full rounded-full bg-blue-600 progress-bar-fill" style="width: 95%;"></div>
+                        </div>
+                    </div>
+                    <!-- Bar 4: HTML & CSS (Dasar Pemrograman Web) -->
+                    <div class="space-y-2">
+                        <div class="flex justify-between items-center text-sm font-medium text-gray-700">
+                            <span>HTML & CSS (Struktur dan Styling Web)</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="w-full bg-gray-200 rounded-full h-2 overflow-hidden">
+                            <div class="h-full rounded-full bg-blue-600 progress-bar-fill" style="width: 80%;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+         <!-- BAGIAN ARTIKEL/BLOG (Artikel) -->
+        <section id="artikel" class="py-16">
+            <h2 class="text-3xl sm:text-4xl font-bold mb-10 text-center">
+                <span class="blue-accent"></span> ARTIKEL
+            </h2>
+            <p class="text-center text-lg text-gray-600 mb-10">
+                Opini dan wawasan seputar tren desain visual, *fashion* digital, dan estetika kekinian.
+            </p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Article Card 1: Desain & Fashion -->
+                <div class="article-card card-bg p-5 rounded-xl border border-gray-200 transition-all duration-300 transform">
+                    <span class="text-xs uppercase tracking-wider text-gray-500">Desain Visual | 20 Okt 2025</span>
+                    <h3 class="text-xl font-bold mt-2 mb-3">Estetika 'Clean Girl' vs 'Dark Academia': Pertarungan Tren Visual Terkini</h3>
+                    <p class="text-gray-600 text-sm mb-4">Sebuah analisis mendalam tentang dua gaya aesthetic yang sedang mendominasi media sosial, serta bagaimana keduanya memengaruhi arah desain dan branding modern.</p>
+                    <a href="#" class="text-blue-600 hover:text-blue-800 font-medium text-sm flex items-center">
+                        Baca Selengkapnya
+                        <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                    </a>
+                </div>
+
+                <!-- Article Card 2: Teknologi & Fashion -->
+                <div class="article-card card-bg p-5 rounded-xl border border-gray-200 transition-all duration-300 transform">
+                    <span class="text-xs uppercase tracking-wider text-gray-500">Tekno Fashion | 01 Nov 2025</span>
+                    <h3 class="text-xl font-bold mt-2 mb-3">AI dan Fashion Gen Z: Personalisasi, Tren, dan Masa Depan Belanja Digital</h3>
+                    <p class="text-gray-600 text-sm mb-4">Menelusuri bagaimana teknologi AI, mulai dari algoritma rekomendasi hingga virtual try-on, sedang mengubah cara Generasi Z berbelanja dan berinteraksi dengan dunia mode.</p>
+                    <a href="#" class="text-blue-600 hover:text-blue-800 font-medium text-sm flex items-center">
+                        Baca Selengkapnya
+                        <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                    </a>
+                </div>
+
+                <!-- Article Card 3: Editing & Desain -->
+                <div class="article-card card-bg p-5 rounded-xl border border-gray-200 transition-all duration-300 transform">
+                    <span class="text-xs uppercase tracking-wider text-gray-500">Editing | 15 Sep 2025</span>
+                    <h3 class="text-xl font-bold mt-2 mb-3">Panduan Kilat Editing Foto: Menciptakan Nuansa Visual yang Aesthetic</h3>
+                    <p class="text-gray-600 text-sm mb-4">Kumpulan tips praktis untuk menghasilkan foto dengan vibe kekinian, selaras dengan color palette dan mood visual yang sedang populer di berbagai platform digital.</p>
+                    <a href="#" class="text-blue-600 hover:text-blue-800 font-medium text-sm flex items-center">
+                        Baca Selengkapnya
+                        <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER / KONTAK -->
+    <footer id="kontak" class="card-bg p-8 border-t border-gray-300 mt-12">
+        <div class="max-w-7xl mx-auto text-center">
+            <h2 class="text-2xl font-bold blue-accent mb-4">MARI BERKOLABORASI!</h2>
+            <p class="text-gray-600 mb-6 max-w-xl mx-auto">
+                Punya ide, proyek seru, atau sekadar mau ngobrol soal teknologi dan sistem informasi? Yuk, hubungi saya aja!
+            </p>
+            
+            <div class="flex justify-center flex-wrap gap-6 mb-8 text-sm">
+                <!-- 1. Email Icon (Envelope) -->
+                <a href="mailto:emailanda@gmail.com" class="hover:text-blue-600 transition-colors text-gray-700 flex items-center space-x-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8m-2 4v7a2 2 0 01-2 2H5a2 2 0 01-2-2v-7"/>
+                    </svg>
+                    <span>gemilory21@gmail.com</span>
+                </a>
+                
+                <!-- 2. LinkedIn Icon -->
+                <a href="https://linkedin.com/in/gabriel-paskha-ceshar-ginting-5b0b56355/" target="_blank" class="hover:text-blue-600 transition-colors text-gray-700 flex items-center space-x-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM4 9h4v12H4zM6 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5z"/>
+                    </svg>
+                    <span>LinkedIn/GABRIEL PASKHA CESHAR GINTING/</span>
+                </a>
+                
+                <!-- 3. GitHub Icon -->
+                <a href="https://github.com/gABRIEL-77gg" target="_blank" class="hover:text-blue-600 transition-colors text-gray-700 flex items-center space-x-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor">
+                        <path fill-rule="evenodd" d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.43 9.8 8.21 11.38.6.11.82-.26.82-.57v-2.06c-3.33.72-4.04-1.61-4.04-1.61-.54-1.37-1.32-1.74-1.32-1.74-1.08-.74.08-.72.08-.72 1.2.08 1.83 1.24 1.83 1.24 1.07 1.82 2.8 1.29 3.49.99.11-.77.42-1.29.77-1.58-2.65-.3-5.45-1.32-5.45-5.92 0-1.31.46-2.38 1.24-3.22-.12-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.29-1.55 3.3-1.23 3.3-1.23.66 1.66.24 2.88.12 3.18.78.84 1.24 1.91 1.24 3.22 0 4.61-2.8 5.62-5.46 5.92.43.37.82 1.12.82 2.25v3.37c0 .31.22.68.82.57C20.57 21.8 24 17.31 24 12 24 5.37 18.63 0 12 0z" clip-rule="evenodd"/>
+                    </svg>
+                    <span>GitHub/gABRIEL-77gg</span>
+                </a>
+            </div>
+                </a>
+            </div>
+
+            <p class="text-xs text-gray-500 mt-4">
+                &copy; 2025 SUPER AXTER. Didesain dengan Cinta <3 .
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        // JS untuk membuat navigasi mobile (hamburger menu) bekerja
+        const navMenu = document.querySelector('nav');
+        const menuButton = document.querySelector('header button');
+
+        if (menuButton) {
+            menuButton.addEventListener('click', () => {
+                // Toggle visibility for small screens
+                navMenu.classList.toggle('hidden');
+                navMenu.classList.toggle('flex');
+                
+                // Add better mobile display for the menu when open
+                if (!navMenu.classList.contains('hidden')) {
+                    navMenu.classList.add('flex-col', 'absolute', 'top-16', 'left-0', 'w-full', 'card-bg', 'p-4', 'shadow-lg', 'z-10');
+                    navMenu.classList.remove('space-x-6');
+                } else {
+                    navMenu.classList.remove('flex-col', 'absolute', 'top-16', 'left-0', 'w-full', 'card-bg', 'p-4', 'shadow-lg', 'z-10');
+                    navMenu.classList.add('space-x-6');
+                }
+            });
+            
+            // Close mobile menu when a link is clicked
+            navMenu.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', () => {
+                    if (window.innerWidth < 768) { // 768px is Tailwind's 'md' breakpoint
+                        navMenu.classList.add('hidden');
+                        navMenu.classList.remove('flex');
+                    }
+                });
+            });
+        }
+    </script>
+</body>
+</html>
